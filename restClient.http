@@ -1,0 +1,31 @@
+POST https://api.fxer.net/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "trial@fxer.net",
+    "password": "dxgSF883",
+}
+
+###
+GET https://api.fxer.net/api/logout HTTP/1.1
+Content-Type: application/json
+###
+GET https://api.fxer.net/api/trial HTTP/1.1
+content-type: application/json
+###
+GET https://api.fxer.net/api/trial?offset=5&limit=5 HTTP/1.1
+content-type: application/json
+###
+POST https://api.fxer.net/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "trial@fxer.net",
+  "password": "dxgSF883",
+  "csrfToken": "c2606cd7ea62d411a2e8c3266dfccd55ed247ad0dc942727c76758515dfc0f4f",
+  "callbackUrl": "http://localhost:3000/login",
+  "json": "true"
+}
+###
+GET https://restcountries.com/v3.1/all HTTP/1.1
+content-type: application/json
